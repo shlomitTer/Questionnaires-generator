@@ -1,0 +1,177 @@
+// global css variables
+@import './variables';
+@import './mixin';
+
+
+
+// basic css reset
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #00c2c4;
+    font-family: 'Heebo', 'Roboto', sans-serif;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: $h1-font-size-large;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    // text-align: center
+}
+
+p {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding-inline: 5rem;
+    width: 100%;
+}
+
+label {
+    display: none;
+}
+
+.block-label {
+    display: inline-block;
+}
+
+a {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+select,
+textarea {
+    border: none;
+    line-height: normal;
+    outline: 0;
+    font-size: 1rem;
+    margin: 0 auto;
+    font-family: inherit;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+    &::placeholder {
+        color: $grey;
+    }
+
+    &:focus {
+        outline: 1px solid $grey;
+    }
+}
+
+select {
+    padding: 0.25rem;
+    outline: none;
+}
+
+select:has(option[value='']:checked) option[value='']:checked {
+    color: red;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+.designedButton {
+    @include designed-button;
+}
+
+.iconButton {
+    @include iconButton;
+}
+
+form {
+    background-color: $dark-aqua;
+    padding: 2rem;
+    border-radius: 3px;
+    margin: 1rem auto;
+    text-align: start;
+    max-width: 500px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex-button {
+    @include designed-button;
+    display: inline-flex;
+    margin: 1rem;
+
+    span {
+        width: 230px;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+.end {
+    text-align: end;
+}
+
+@media screen and (max-width: $medium) {
+
+    h1 {
+        font-size: $h1-font-size-medium;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: $small) {
+
+    h1 {
+        font-size: $h1-font-size-small;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}

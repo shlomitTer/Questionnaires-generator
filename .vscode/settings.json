@@ -1,0 +1,38 @@
+{
+    // deprecated check last line for latest format
+    // "eslint.autoFixOnSave": true,
+    // "eslint.validate": [
+    //     "javascript",
+    //     "javascriptreact",
+    //     {
+    //         "language": "typescript",
+    //         "autoFix": true
+    //     },
+    //     {
+    //         "language": "typescriptreact",
+    //         "autoFix": true
+    //     }
+    // ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    }
+    // for now leave in comment, linter is available when creating commit.
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // }
+}

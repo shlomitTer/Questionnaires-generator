@@ -1,0 +1,59 @@
+@import '../../../variables';
+
+.que {
+  .small-span {
+    font-size: 0.85rem;
+    // display: flex;
+    // align-items: center;
+    color: $dark-grey;
+  }
+
+  // .details {
+  //   width: 800px;
+  //   margin: 0 auto;
+  // }
+
+  .end-flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  h4 {
+    padding: 0;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .answer-area {
+    padding-top: 1rem;
+    position: relative;
+  }
+
+  .checkbox-line {
+    display: flex;
+  }
+
+  .undesigned_button {
+    background-color: transparent;
+    border: none;
+    // color: $dark-grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 300;
+    font-size: 1.25rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

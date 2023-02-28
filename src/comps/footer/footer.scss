@@ -1,0 +1,18 @@
+@import '../../variables';
+
+footer {
+  background-color: darkcyan;
+  width: 100%;
+  color: ghostwhite;
+  text-align: center;
+  height: $footer-height-large;
+  padding: 1rem;
+
+
+}
+
+@media screen and (max-width: $medium) {
+  footer {
+    height: $footer-height-small;
+  }
+}

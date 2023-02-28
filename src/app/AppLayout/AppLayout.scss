@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.layout-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .main-layout {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .main-content {
+            width: 100%;
+            min-height: calc(100vh - #{$header-height-large} - #{$footer-height-large});
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .layout-container {
+        .main-layout {
+            .main-content {
+                min-height: calc(100vh - #{$header-height-small} - #{$footer-height-small});
+            }
+        }
+    }
+}

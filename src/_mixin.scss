@@ -1,0 +1,65 @@
+ @import './variables';
+
+ @mixin designed-button {
+   position: relative;
+   display: block;
+   margin: 2rem 2rem 2rem 0;
+   padding: 0;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-shadow: 4px 4px 12px rgba(152, 2, 2, 0.5);
+   font-size: 1rem;
+   border: none;
+   background-color: transparent;
+   line-height: 2rem;
+
+   &:hover {
+     cursor: pointer;
+   }
+
+   span {
+     position: relative;
+     display: inline-block;
+     padding: 0 1rem;
+     background: $orange;
+     transition: transform .7s;
+     transform-origin: 50% 0;
+     transform-style: preserve-3d;
+
+     &::before {
+       position: absolute;
+       top: 100%;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: $light-orange;
+       content: attr(data-hover);
+       transform: rotateX(-90deg);
+       transform-origin: 50% 0;
+     }
+   }
+
+   &:hover span,
+   :focus span {
+     transform: rotateX(90deg) translateY(-20px);
+   }
+ }
+
+
+ @mixin iconButton {
+   background: transparent;
+   transition: transform .7s;
+   text-shadow: none;
+   background-image: linear-gradient(60deg, $purple, $orange);
+   background-clip: text;
+   color: transparent;
+   border: none;
+   display: block;
+   margin: 1rem 0;
+
+   &:hover {
+     cursor: pointer;
+     transform: rotate(180deg)scale(1.5);
+   }
+ }

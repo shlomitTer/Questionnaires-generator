@@ -1,0 +1,25 @@
+@import '../../../variables';
+
+.results {
+  margin: 2rem auto;
+  padding: 0 0 2rem 0;
+
+  .correct {
+    color: whitesmoke;
+    background-color: rgb(1, 192, 1);
+    // font-weight: 900;
+  }
+
+  .wrong {
+    color: whitesmoke;
+    background-color: rgb(221, 37, 37);
+    // font-weight: 900;
+  }
+
+  span {
+    font-size: 0.75rem;
+    color: $dark-grey;
+    margin: 0 0.75rem;
+  }
+
+}

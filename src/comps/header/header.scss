@@ -1,0 +1,102 @@
+@import '../../variables';
+
+header {
+  color: ghostwhite;
+  min-height: $header-height-large;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 0%;
+      bottom: -0.2rem;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      background: #faa422;
+      transition: .7s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+
+    &:hover {
+      color: azure;
+    }
+
+  }
+
+  .logo {
+    color: black;
+    font-weight: 700;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  @media screen and (max-width:$medium) {
+    position: relative;
+
+    nav {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+      text-align: start;
+      // padding: 1rem;
+      margin: 0.5rem 0;
+      background-color: transparent;
+      border: none;
+    }
+
+    ul {
+      display: block;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0px;
+      text-align: start;
+    }
+
+    .active-nav {
+      background-color: $aqua;
+      display: block;
+      position: absolute;
+      inset-block-start: 100%;
+      inset-inline-start: 0;
+      width: 100%;
+
+      ul {
+        li {
+          a {}
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$medium) {
+  header {
+    min-height: $header-height-small;
+  }
+}

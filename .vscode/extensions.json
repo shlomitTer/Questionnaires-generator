@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "eamodio.gitlens",
+        "vincaslt.highlight-matching-tag",
+        "formulahendry.auto-rename-tag",
+        "EditorConfig.EditorConfig"
+    ],
+    "unwantedRecommendations": []
+}

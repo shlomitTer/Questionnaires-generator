@@ -1,0 +1,35 @@
+@import '../../variables';
+// @import '../../mixin';
+
+.home {
+
+  // h1 {
+  //   font-size: 6rem;
+  //   color: #fff;
+  // }
+
+  button {
+    line-height: 4rem;
+    font-size: 2rem;
+  }
+
+
+}
+
+// @media screen and (max-width: $medium) {
+//   .home {
+//     h1 {
+
+//       font-size: $h1-font-size-medium;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $small) {
+//   .home {
+//     h1 {
+
+//       font-size: $h1-font-size-small;
+//     }
+//   }
+// }
